@@ -1,0 +1,16 @@
+const paragraphs: string[] = [
+    "The sun dipped below the horizon, painting the sky in orange and pink.\nA gentle breeze rustled the leaves of the old oak tree in the meadow.\nIt was a perfect evening to reflect on the day's events.\nSoon the first stars of the night began to appear, twinkling softly.\nThe world grew quiet, settling into a peaceful slumber.\nIt was a moment of pure and simple tranquility.",
+    "Technology evolves at a breathtaking pace.\nWhat was once science fiction is now part of our daily lives.\nInnovations are shaping the future of our planet and society.\nArtificial intelligence is becoming more and more integrated.\nWe must navigate these changes with wisdom and foresight.\nOur choices today will define the world of tomorrow.",
+    "Reading is a gateway to countless worlds and ideas.\nA good book can transport you to another time.\nIt introduces you to unforgettable characters.\nEach page turned is a new adventure waiting to unfold.\nStories teach us empathy, courage, and understanding.\nLosing yourself in a book is a wonderful escape.",
+    "The ancient forest stood silent and majestic.\nTowering trees formed a dense canopy.\nThe sunlight became a soft, ethereal glow.\nThe air smelled of moss and damp soil.\nEvery rustle of leaves hinted at hidden life.\nIt felt like stepping into a forgotten, magical world.\nTime itself seemed to slow down within its depths.",
+    "To achieve a goal, one must have dedication.\nPerseverance is key on a path with challenges.\nThe courage to continue defines success.\nEvery small step forward is a victory.\nEmbrace the journey, not just the destination.\nLearn from your mistakes and never give up.\nSuccess is the sum of small efforts repeated daily.",
+    "Music has a unique power to connect people.\nA simple melody can bring joy or comfort.\nIt is a universal language for the soul.\nIt can evoke memories long thought forgotten.\nA rhythm can make you want to dance instantly.\nMusic can be a companion in moments of solitude.\nIt fills the spaces between words with emotion.",
+    "The bustling city never truly sleeps.\nSkyscrapers reach for the clouds above.\nBelow, streets are rivers of light and sound.\nEach corner holds a different story.\nThe energy of the crowd is a palpable force.\nThere is always something new to discover.\nA symphony of ambition, art, and life plays on.",
+    "Cooking is an art form you can taste.\nSimple ingredients transform into a feast.\nFlavors and aromas tell a delicious story.\nSharing a meal creates lasting memories.\nThe kitchen is a place for creativity and love.\nEvery dish is a reflection of its creator.\nIt is a way to nourish both body and soul.",
+    "Exploring the cosmos fills us with wonder.\nDistant galaxies spiral in the darkness.\nStars are born and die in cosmic clouds.\nWe are small observers in a vast universe.\nBlack holes bend the very fabric of spacetime.\nThe search for life beyond Earth continues.\nIt reminds us of the endless possibilities that exist."
+];
+
+export const getRandomParagraph = (): string => {
+    const randomIndex = Math.floor(Math.random() * paragraphs.length);
+    return paragraphs[randomIndex];
+};
